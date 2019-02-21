@@ -9,6 +9,3 @@ puts "----------"
 @store1.name = 'Burnaboo'
 @store1.save
 @store2 = Store.find_by(id: 2)
-
-# pp @store1
-# pp @store2
