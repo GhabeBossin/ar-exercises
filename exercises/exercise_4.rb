@@ -29,4 +29,17 @@ store.womens_apparel = true
 store.save
 
 puts "----how many stores? #{Store.count} ----"
-pp @mens_stores = Store.where(mens_apparel: true)
+
+@mens_stores = Store.where(mens_apparel: true)
+pp '----mens stores:----'
+@mens_stores.each do |store|
+  pp store.name
+  pp store.annual_revenue
+end
+
+@womens_stores = Store.where(womens_apparel: true)
+pp '----womens stores:----'
+@womens_stores.each do |store|
+  pp store.name
+  pp store.annual_revenue
+end
