@@ -30,10 +30,3 @@ store.save
 
 puts stores = Store.count
 
-@store1 = Store.find_by(id: 1)
-@store1.name = 'Burnaboo'
-@store2 = Store.find_by(id: 2)
-
-pp @store1
-pp @store2
-
