@@ -28,5 +28,5 @@ store.mens_apparel = true
 store.womens_apparel = false
 store.save
 
-puts stores = Store.count
+puts "----how many stores? #{Store.count} ----"
 
